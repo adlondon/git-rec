@@ -1,0 +1,46 @@
+.section {
+  width: 75%;
+  display:inline-block;
+  .pages {
+    display:none;
+  }
+  .show {
+    display:block;
+  }
+  ul {
+    margin: 0;
+      position:relative;
+  }
+  nav li {
+    display: inline-block;
+    padding: 8px 12px;
+
+
+    &:nth-child(4) {
+      margin-left:100px;
+      padding: 5px;
+      border: $border;
+      font-size: 13px;
+      font-weight: 600;
+    }
+  }
+    .repoItems {
+      list-style-type: none;
+      padding: 10px 6px;
+      }
+      .timeUPdated {
+        padding: 10px 0;
+      }
+
+}
+
+.tab-nav {
+  border-bottom: $border;
+  margin-top: 10px;
+}
+.active {
+  position:relative;
+  border: $border;
+  border-bottom: 1px solid white;
+  margin-bottom: -1px;
+}

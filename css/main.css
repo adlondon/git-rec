@@ -1,0 +1,95 @@
+.container {
+  width: 980px;
+  margin: auto;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+header {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-bottom: 1px solid lightgray; }
+  header nav {
+    display: inline-block; }
+    header nav .right {
+      margin-left: 30px; }
+    header nav ul {
+      display: inline-block;
+      margin: 0 auto;
+      padding: 0; }
+      header nav ul .octicon-mark-github {
+        font-size: 28px; }
+    header nav li {
+      display: inline-block;
+      list-style-type: none;
+      vertical-align: middle;
+      padding: 0 10px; }
+    header nav input[name="search"] {
+      width: 360px;
+      height: 28px; }
+  header img {
+    width: 20px; }
+
+.aside {
+  width: 25%;
+  float: left;
+  padding-top: 20px; }
+  .aside img {
+    width: 100%;
+    border-radius: 6px; }
+  .aside .info {
+    padding: 12px 0;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray; }
+  .aside .info > li {
+    padding: 3px;
+    list-style-type: none; }
+  .aside span.octicon-clock, .aside span.octicon-location {
+    margin-right: 15px; }
+  .aside .popularity {
+    border-bottom: 1px solid lightgray; }
+    .aside .popularity .pop-col {
+      display: inline-block;
+      width: 32.13%;
+      text-align: center; }
+  .aside .organizations img {
+    width: 42px; }
+  .aside #org-text {
+    padding: 12px 0; }
+
+.section {
+  width: 75%;
+  display: inline-block; }
+  .section .pages {
+    display: none; }
+  .section .show {
+    display: block; }
+  .section ul {
+    margin: 0;
+    position: relative; }
+  .section nav li {
+    display: inline-block;
+    padding: 8px 12px; }
+    .section nav li:nth-child(4) {
+      margin-left: 100px;
+      padding: 5px;
+      border: 1px solid lightgray;
+      font-size: 13px;
+      font-weight: 600; }
+  .section .repoItems {
+    list-style-type: none;
+    padding: 10px 6px; }
+  .section .timeUPdated {
+    padding: 10px 0; }
+
+.tab-nav {
+  border-bottom: 1px solid lightgray;
+  margin-top: 10px; }
+
+.active {
+  position: relative;
+  border: 1px solid lightgray;
+  border-bottom: 1px solid white;
+  margin-bottom: -1px; }
