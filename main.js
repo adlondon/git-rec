@@ -33,7 +33,7 @@ $(".repoList").append(repoEach);
 
 var newHtml = ""
 _.each (events, function (item) {
-  if (item.type === "CreateEvent" && item.ref_type ==="branch" ) {
+  if (item.type === "CreateEvent" && item.payload.ref_type ==="branch" ) {
   newHtml += "<li class ='pubItems'>"
   + "<span class='octicon octicon-git-branch dashboard-event-icon'></span>"
   + item.actor.login
@@ -45,7 +45,7 @@ _.each (events, function (item) {
   + moment.utc(item.created_at).fromNow()
   + "</li>"
 }
-  else if (item.type === "CreateEvent" && item.ref_type === "repository") {
+  else if (item.type === "CreateEvent" && item.payload.ref_type === "repository") {
   newHtml += "<li class ='pubItems'>"
   + "<span class='octicon octicon-repo dashboard-event-icon'></span>"
   + item.actor.login
@@ -76,5 +76,5 @@ _.each (events, function (item) {
   }
 
 })
-console.log(newHTML)
-// $('.public-activity-sec').append(newHTML)
+console.log(newHtml)
+$('.public-activity-sec').append(newHtml)
