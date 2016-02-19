@@ -72,7 +72,7 @@ _.each (events, function (item) {
     + "<span class='octicon octicon-mark-github'></span>"
     + item.payload.head.slice(-7)
     + " "
-    + item.commits[0].message
+    + item.payload.commits[0].message
     + "</li>"
   }
 
