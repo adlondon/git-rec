@@ -93,3 +93,9 @@ header {
   border: 1px solid lightgray;
   border-bottom: 1px solid white;
   margin-bottom: -1px; }
+
+.pubItems {
+  list-style-type: none;
+  padding: 10px; }
+  .pubItems img {
+    width: 28px; }

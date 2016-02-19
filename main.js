@@ -68,13 +68,20 @@ _.each (events, function (item) {
     + item.repo.name
     + "</div>"
     + "<div class= 'description'>"
-    + item.avatar_url
+    + "<img src= '" + item.actor.avatar_url + "'>'"
     + "<span class='octicon octicon-mark-github'></span>"
-    + item.payload.head.slice(-9)
-    + item.message
+    + item.payload.head.slice(-7)
+    + " "
+    + item.commits[0].message
     + "</li>"
   }
 
 })
 console.log(newHtml)
 $('.public-activity-sec').append(newHtml)
+
+
+
+_.each(item, function (el) {
+  el.commit.message
+})
