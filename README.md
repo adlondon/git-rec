@@ -1,5 +1,5 @@
 # git-rec
-A recreation of my Github profile using Github's API.
+A recreation of my Github profile using Github's JSON data.
 
 **Future updates to be completed**
 * Add timestamp for joined date
